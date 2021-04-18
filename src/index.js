@@ -18,7 +18,7 @@ app.post("/login", function (req, res) {
     password: req.body.password
   };
   if (CREDS.username === "mayukh" && CREDS.password === "12345") {
-    res.send("<h1>Welcome to Home Page.</h1>");
+    res.send("<h1>Login Successfully.</h1>");
     console.log(`User ${CREDS.username}...`);
   } else {
     res.render("error");
