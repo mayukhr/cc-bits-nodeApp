@@ -1,0 +1,123 @@
+:root {
+  --radius: 0.5rem;
+  --clr-graydark: #37474f;
+  --clr-graymed: gray;
+  --clr-primary: #139eed;
+  --clr-primarydark: #010130;
+  --padding: 1rem;
+}
+body{
+  background-color: #ccffff;
+}
+.App {
+  /* font-family: Ubuntu, sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  /* text-align: center; */
+  color: var(--clr-graydark);
+}
+
+/* .App::before {
+  content: url(background-large.jpeg);
+  display: inline-table;
+  position: absolute;
+  background-blend-mode: multiply;
+  opacity: 0.8;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+} 
+*/
+
+.logo {
+  height: 12rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.wrapper {
+  background: white;
+  width: 20rem;
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin: 2rem auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.description {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.form-input {
+  border: none;
+  background-color: #c8f5f8;
+  border-radius: var(--radius);
+  padding: var(--padding);
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  transition: 250ms all ease-in;
+}
+
+.form-input::placeholder {
+  color: var(--clr-graymed);
+}
+
+.form-input:hover {
+  border: 1px solid var(--clr-primary);
+  box-shadow: 0 0 5px var(--clr-primary);
+  background: white;
+}
+
+.form-input:focus {
+  border: 1px solid var(--clr-primary);
+  box-shadow: 0 0 5px var(--clr-primary);
+  background: white;
+}
+
+.btn-primary {
+  border: none;
+  background: var(--clr-primary);
+  width: 20rem;
+  color: white;
+  margin-top: 1rem;
+  padding: var(--padding);
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-weight: bold;
+  transition: 250ms all ease-in;
+}
+
+.btn-primary:hover {
+  background: var(--clr-primarydark);
+}
+
+.error-message {
+  color: red;
+}
