@@ -2,7 +2,7 @@ const express = require("express");
 const bp = require("body-parser");
 const path = require("path");
 const app = express();
-const port = 8080;
+const port = process.env.port || 8080;
 
 app.set("view engine", "ejs");
 app.use(bp.urlencoded());
